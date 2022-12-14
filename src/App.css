@@ -26,6 +26,7 @@
   font-weight: bold;
   color: #0F786B;
   font-size: 28px;
+  margin: 10px
 }
 
 .header {
@@ -34,6 +35,7 @@
   display: flex;
   justify-content: center;
   height: 12%;
+  background-color: #021311;
 }
 
 .sticky{
@@ -47,4 +49,27 @@
 .selected {
   border-bottom: 3px solid #11bb9a;
   color: #095d4c;
+}
+
+.section {
+  background-color: #00262E;
+}
+
+#Home{
+  background-color: #00262E;
+  height: 100vh;
+  text-align: center;
+}
+
+.homeP {
+  margin-left: 27%;
+  padding-top: 15%;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  width: 50%;
+  vertical-align: middle;
+  color: #0F786B;
 }

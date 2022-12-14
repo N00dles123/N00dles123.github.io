@@ -32,6 +32,13 @@ function App() {
             </button>
           </div>
         </div>
+        <div className="section" id="Home">
+                  <p className='homeP'>
+                  👋 Hi, I’m Jason
+          I am a software engineer and a student.
+          Scroll down to learn more about me and my projects :)
+          </p>
+        </div>
         <div className="section" id="About" />
 
         <div className="section" id="Projects" />
