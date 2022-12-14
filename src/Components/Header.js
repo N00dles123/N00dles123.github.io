@@ -7,15 +7,17 @@ function Header(){
     return(
         <BrowserRouter>
                 <div className='Header'>
-                    <Link to='#about' className='AboutLink'>
-                        About
-                    </Link>
-                    <Link to='#projects' className='ProjectsLink'>
-                        Projects
-                    </Link>
-                    <Link to='#contact' className='ContactLink'>
-                        Contact
-                    </Link>
+                    <div className='Sticky'>
+                        <Link to='#about' className='AboutLink'>
+                            About
+                        </Link>
+                        <Link to='#projects' className='ProjectsLink'>
+                            Projects
+                        </Link>
+                        <Link to='#contact' className='ContactLink'>
+                            Contact
+                        </Link>
+                        </div>
                 </div>
         </BrowserRouter>
     );
