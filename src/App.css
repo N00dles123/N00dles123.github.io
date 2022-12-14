@@ -1,10 +1,8 @@
-.overall {
-  background-color: #021311;
-}
 .App {
   text-align: center;
 }
 .header_link {
+  margin-right: 80px;
   padding: 10px;
   text-decoration: none;
   font-family: Oswald;
@@ -31,6 +29,22 @@
 }
 
 .header {
+  padding-top: 0;
+  padding-bottom: 0;
   display: flex;
   justify-content: center;
+  height: 12%;
+}
+
+.sticky{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.selected {
+  border-bottom: 3px solid #11bb9a;
+  color: #095d4c;
 }

@@ -32,9 +32,10 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="section" id="Leadership" />
-        <div className="section" id="Providers" />
-        <div className="section" id="Operations" />
+        <div className="section" id="About" />
+
+        <div className="section" id="Projects" />
+        <div className="section" id="Contact" />
       </div>
 
       <div className="bottom-spacer" />
