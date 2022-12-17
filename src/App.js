@@ -106,13 +106,22 @@ function App() {
         </div>
         <div className="section" id="Home" ref={ homeRef }>
                   <p className='homeP'>
-                  👋 Hi, I’m Jason
+                  &#128075; Hi, I’m Jason
           I am a software engineer and a student.
           Scroll down to learn more about me and my projects :)
           </p>
         </div>
         <div className="section" id="About" ref={ aboutRef }>
-            <h1 className="aboutHeader">About Me</h1>
+            <h1 className={`aboutHeader`}>About Me</h1>
+            <p className={`aboutP ${visibleSection === "About" ? "fadeinP" : "hidden"}`}>
+            Hello! My name is Jason Lin and I enjoy creating software as well as learning new ideas. 
+            I am currently a student at the University of Central Florida and from there, I learned a lot about full stack software development and computer science.
+            My current focuses right now are on learning more about web development as well as other software development topics.
+            I am experienced in creating MERN stack projects as well as LAMP stack projects. 
+            I am also experienced with Git, MySQL, and Visual Studio Code, I hope to make more use of these as I progress on with my career. 
+            I can also speak and comprehend limited Mandarin Chinese. 
+            Other than programming, I enjoy watching basketball and watching TV in my free time.
+            </p>
         </div> 
 
         <div className="section" id="Projects" ref={ projectsRef }/>
