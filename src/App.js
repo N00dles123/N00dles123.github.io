@@ -105,26 +105,35 @@ function App() {
           </div>
         </div>
         <div className="section" id="Home" ref={ homeRef }>
+            <div className='homeBox'>   
                   <p className='homeP'>
                   &#128075; Hi, I’m Jason
-          I am a software engineer and a student.
-          Scroll down to learn more about me and my projects :)
-          </p>
+                  I am a software engineer and a student.
+                  Scroll down to learn more about me and my projects :)
+                  </p>
+            </div>   
         </div>
         <div className="section" id="About" ref={ aboutRef }>
             <h1 className={`aboutHeader`}>About Me</h1>
-            <p className={`aboutP ${visibleSection === "About" ? "fadeinP" : "hidden"}`}>
-            Hello! My name is Jason Lin and I enjoy creating software as well as learning new ideas. 
-            I am currently a student at the University of Central Florida and from there, I learned a lot about full stack software development and computer science.
-            My current focuses right now are on learning more about web development as well as other software development topics.
-            I am experienced in creating MERN stack projects as well as LAMP stack projects. 
-            I am also experienced with Git, MySQL, and Visual Studio Code, I hope to make more use of these as I progress on with my career. 
-            I can also speak and comprehend limited Mandarin Chinese. 
-            Other than programming, I enjoy watching basketball and watching TV in my free time.
-            </p>
+            <div className={`aboutCardDiv ${visibleSection === "About" ? "fadeinP" : "hidden"}`}>
+              <p className={`aboutP`}>
+              Hello! My name is Jason Lin and I enjoy creating software as well as learning new ideas. 
+              I am currently a student at the University of Central Florida and from there, I learned a lot about full stack software development and computer science.
+              My current focuses right now are on learning more about web development as well as other software development topics.
+              I am experienced in creating MERN stack projects as well as LAMP stack projects. 
+              I am also experienced with Git, MySQL, and Visual Studio Code, I hope to make more use of these as I progress on with my career. 
+              I can also speak and comprehend limited Mandarin Chinese. 
+              Other than programming, I enjoy watching basketball and watching TV in my free time.
+              </p>
+              <div className='aboutImgDiv'>
+                <img src='program.png' alt='program' className={`aboutImg ${visibleSection === "About" ? "fadeinP" : "hidden"}`}/>
+              </div>
+            </div>
         </div> 
 
-        <div className="section" id="Projects" ref={ projectsRef }/>
+        <div className="section" id="Projects" ref={ projectsRef }>
+            <h2 className={`projectsHeader`}>Here are some of the projects I've worked on</h2>
+        </div>
         <div className="section" id="Contact" ref={contactRef}/>
       </div>
 

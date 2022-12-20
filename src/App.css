@@ -5,37 +5,39 @@
   margin-right: 4.1%;
   padding: 10px;
   text-decoration: none;
-  font-family: Oswald;
+  font-family: Roboto, Helvetica, Arial, sans-serif;;
   font-style: normal;
   font-size: 32px;
   font-weight: bold;
   cursor: pointer;
-  background-color: #021311;
+  background-color: #798187;
   outline: none;
   border: none;
-  color: #707070;
+  color: #ECEDED;
 }
 .resumeButton{
   text-decoration: none;
   border-radius: 15px;
-  background-color: #00262E;
-  border: 2px solid #0F786B;
+  background-color: #171418;
+  border: 2px solid #171418;
   cursor: pointer;
-  font-family: Oswald;
+  font-family: Roboto, Helvetica, Arial, sans-serif;;
   font-style: normal;
-  font-weight: bold;
-  color: #0F786B;
-  font-size: 28px;
+
+  color: #ECEDED;
+  font-size: 30px;
   margin: 10px
 }
-
+.content{
+  display: grid;
+}
 .header {
   padding-top: 0;
   padding-bottom: 0;
-  display: flex;
+  display: block;
   justify-content: center;
-  height: 12%;
-  background-color: #021311;
+  min-height: 12%;
+  background-color: #798187;
 }
 
 .sticky{
@@ -47,56 +49,57 @@
 }
 
 .selected {
-  border-bottom: 3px solid #11bb9a;
-  color: #095d4c;
+  border-bottom: 3px solid #1D1F21;
+  color: #1D1F21;
 }
 
 .section {
-  background-color: #00262E;
+  background-color: #171418;
 }
 
 #Home{
-  background-color: #00262E;
-  height: 88vh;
-  text-align: center;
-}
-
-#About {
   height: 92vh;
   text-align: center;
 }
 
-#Projects {
-  height: 88vh;
+#About {
+  min-height: 88vh;
   text-align: center;
+  display: block;
+}
+
+#Projects {
+  min-height: 100vh;
+  text-align: center;
+  display: block;
 }
 
 .homeP {
-  margin-left: 27%;
-  padding-top: 15%;
-  font-family: 'Lato';
-  font-weight: 400;
+  margin-left: 10%;
+  padding-top: 10%;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-weight: 700;
   font-size: 40px;
   text-align: center;
-  width: 50%;
+  width: 80%;
   vertical-align: middle;
-  color: #0F786B;
+  color: #ECEDED;
 }
-
 .aboutHeader{
-  padding-top: 4%;
+  padding-top: 5%;
   font-family: 'Oswald';
   font-size: 2rem;
-  color: #707070;
+  color: #ECEDED;
 }
 
 .aboutP{
   margin-top: 4%;
-  margin-left: 25%;
-  font-family: 'Lato';
-  font-size: 2rem;
-  color: #0F786B;
-  margin-right: 25%;
+  margin-left: 19.5%;
+  width: 61%;
+  font-family: Roboto, Helvetica, Arial, sans-serif;;
+  font-size: 28px;
+  color: #1D1F21;
+  margin-right: 19.5%;
 }
 
 @keyframes fadein {
@@ -115,3 +118,41 @@
 .hidden{
   display: none;
 }
+
+.homeBox{
+  margin-top: 10%;
+  margin-left: 25%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #6C707B;
+  display: block;
+  min-height: 10vh;
+  min-width: 50vw;
+  margin-right: 25%;
+  box-shadow: 0 4px 8px 0 rgba(13, 13, 13, 0.2);
+  padding-bottom: 5vh;
+
+}
+
+.aboutCardDiv{
+  padding-top: 1%;
+  margin-left: 10%;
+  background-color: #ECEDED;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.projectsHeader{
+  padding-top: 4%;
+  font-family: 'Oswald';
+  font-size: 2rem;
+  color: #ECEDED;
+}
+
+/*
+.aboutImg{
+  height: auto;
+  min-width: 50%;
+}
+*/
