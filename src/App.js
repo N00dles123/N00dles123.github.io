@@ -1,4 +1,7 @@
 import './App.css';
+import "@fontsource/roboto-slab"
+import "@fontsource/roboto-mono"
+import "@fontsource/roboto"
 import React, { useRef, useState, useEffect } from 'react';
 
 // functions to handle scrolling and dimensions of the screen
@@ -96,7 +99,12 @@ function App() {
             >
               Projects
             </button>
-            <button type="button" className="header_link">
+            <button type="button" 
+            className={`header_link ${visibleSection === "Contact" ? "selected" : ""}`}
+            onClick={() => {
+              scrollTo(contactRef.current);
+            }}
+            >
               Contact
             </button>
             <button type="button" className='resumeButton' onClick={onButtonClick}>
@@ -126,7 +134,7 @@ function App() {
               Other than programming, I enjoy watching basketball and watching TV in my free time.
               </p>
               <div className='aboutImgDiv'>
-                <img src='program.png' alt='program' className={`aboutImg ${visibleSection === "About" ? "fadeinP" : "hidden"}`}/>
+                {/*<img src='program.png' alt='program' className={`aboutImg ${visibleSection === "About" ? "fadeinP" : "hidden"}`}/> */}
               </div>
             </div>
         </div> 

@@ -5,12 +5,12 @@
   margin-right: 4.1%;
   padding: 10px;
   text-decoration: none;
-  font-family: Roboto, Helvetica, Arial, sans-serif;;
+  font-family: "Roboto";
   font-style: normal;
   font-size: 32px;
   font-weight: bold;
   cursor: pointer;
-  background-color: #798187;
+  background-color: #899CBA;
   outline: none;
   border: none;
   color: #ECEDED;
@@ -18,10 +18,10 @@
 .resumeButton{
   text-decoration: none;
   border-radius: 15px;
-  background-color: #171418;
-  border: 2px solid #171418;
+  background-color: #353A6E;
+  border: 2px solid #353A6E;
   cursor: pointer;
-  font-family: Roboto, Helvetica, Arial, sans-serif;;
+  font-family: "Roboto";
   font-style: normal;
 
   color: #ECEDED;
@@ -34,10 +34,10 @@
 .header {
   padding-top: 0;
   padding-bottom: 0;
-  display: block;
+  display: flex;
   justify-content: center;
   min-height: 12%;
-  background-color: #798187;
+  background-color: #899CBA;
 }
 
 .sticky{
@@ -49,16 +49,16 @@
 }
 
 .selected {
-  border-bottom: 3px solid #1D1F21;
-  color: #1D1F21;
+  border-bottom: 3px solid #353A6E;
+  color: #353A6E;
 }
 
 .section {
-  background-color: #171418;
+  background-color: #353A6E;
 }
 
 #Home{
-  height: 92vh;
+  min-height: 92vh;
   text-align: center;
 }
 
@@ -75,9 +75,10 @@
 }
 
 .homeP {
+  min-height: auto;
   margin-left: 10%;
   padding-top: 10%;
-  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-family: "Roboto Slab";
   font-weight: 700;
   font-size: 40px;
   text-align: center;
@@ -87,8 +88,10 @@
 }
 .aboutHeader{
   padding-top: 5%;
-  font-family: 'Oswald';
-  font-size: 2rem;
+  padding-bottom: 2.5%;
+  font-family: 'Roboto Mono';
+  font-size: 1.8rem;
+  font-weight: 800;
   color: #ECEDED;
 }
 
@@ -96,9 +99,9 @@
   margin-top: 4%;
   margin-left: 19.5%;
   width: 61%;
-  font-family: Roboto, Helvetica, Arial, sans-serif;;
+  font-family: "Roboto Slab";
   font-size: 28px;
-  color: #1D1F21;
+  color: #ECEDED;
   margin-right: 19.5%;
 }
 
@@ -125,9 +128,9 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  background-color: #6C707B;
+  background-color: rgb(46, 48, 79);
   display: block;
-  min-height: 10vh;
+  min-height: 10%;
   min-width: 50vw;
   margin-right: 25%;
   box-shadow: 0 4px 8px 0 rgba(13, 13, 13, 0.2);
@@ -138,21 +141,24 @@
 .aboutCardDiv{
   padding-top: 1%;
   margin-left: 10%;
-  background-color: #ECEDED;
-  width: 80%;
-  border-radius: 5px;
+  margin-right: 10%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(46, 48, 79);
+  min-height: 88vh;
+  min-width: 50%;
+  border-radius: 10px;
 }
 
 .projectsHeader{
   padding-top: 4%;
-  font-family: 'Oswald';
-  font-size: 2rem;
+  font-family: 'Roboto Mono';
+  font-size: 1.8rem;
   color: #ECEDED;
 }
 
-/*
+
 .aboutImg{
   height: auto;
   min-width: 50%;
 }
-*/
