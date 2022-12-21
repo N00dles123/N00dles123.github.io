@@ -8,7 +8,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 500;
   cursor: pointer;
   background-color: #899CBA;
   outline: none;
@@ -18,13 +18,13 @@
 .resumeButton{
   text-decoration: none;
   border-radius: 15px;
-  background-color: #353A6E;
+  background-color: #899CBA;
   border: 2px solid #353A6E;
   cursor: pointer;
   font-family: "Roboto";
   font-style: normal;
-
-  color: #ECEDED;
+  font-weight: 500;
+  color: #353A6E;
   font-size: 30px;
   margin: 10px
 }
@@ -54,6 +54,7 @@
 }
 
 .section {
+  min-width: 98vw;
   background-color: #353A6E;
 }
 
@@ -63,6 +64,7 @@
 }
 
 #About {
+  padding-top: 10%;
   min-height: 88vh;
   text-align: center;
   display: block;
@@ -70,6 +72,12 @@
 
 #Projects {
   min-height: 100vh;
+  text-align: center;
+  display: block;
+}
+
+#Contact {
+  min-height: 88vh;
   text-align: center;
   display: block;
 }
@@ -87,11 +95,10 @@
   color: #ECEDED;
 }
 .aboutHeader{
-  padding-top: 5%;
-  padding-bottom: 2.5%;
   font-family: 'Roboto Mono';
   font-size: 1.8rem;
   font-weight: 800;
+  padding-top: 30%;
   color: #ECEDED;
 }
 
@@ -139,15 +146,17 @@
 }
 
 .aboutCardDiv{
-  padding-top: 1%;
+  margin-top: -3%;
   margin-left: 10%;
   margin-right: 10%;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(46, 48, 79);
+  padding-top: -10%;
+  display: inline-block;
+  background-color: #353A6E;
   min-height: 88vh;
   min-width: 50%;
   border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 .projectsHeader{
@@ -160,5 +169,33 @@
 
 .aboutImg{
   height: auto;
-  min-width: 50%;
+  width: 100%;
+}
+
+.fill{
+  align-items: center;
+  margin-top: 30px;
+  min-height: 3%;
+  width: 100%;
+  background-color: rgb(46, 48, 79);
+  border-radius: 10px;
+}
+
+.aboutImgDiv{
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
+  padding-left: 15%;
+  padding-right: 15%;
+  border-radius: 10px;
+  background-color: #1D1F21;
+  /*
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  */
+}
+
+.aboutContent{
+  border-radius: 10px;
 }

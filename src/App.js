@@ -82,7 +82,7 @@ function App() {
       <div className="top-spacer" />
       <div className="content">
         <div className="sticky">
-          <div className="header" ref={headerRef}>
+          <navbar className="header" ref={headerRef}>
             <button type="button" 
             className={`header_link ${visibleSection === "About" ? "selected" : ""}`}
             onClick={() => {
@@ -110,7 +110,7 @@ function App() {
             <button type="button" className='resumeButton' onClick={onButtonClick}>
               Resume
             </button>
-          </div>
+          </navbar>
         </div>
         <div className="section" id="Home" ref={ homeRef }>
             <div className='homeBox'>   
@@ -122,27 +122,35 @@ function App() {
             </div>   
         </div>
         <div className="section" id="About" ref={ aboutRef }>
-            <h1 className={`aboutHeader`}>About Me</h1>
-            <div className={`aboutCardDiv ${visibleSection === "About" ? "fadeinP" : "hidden"}`}>
-              <p className={`aboutP`}>
-              Hello! My name is Jason Lin and I enjoy creating software as well as learning new ideas. 
-              I am currently a student at the University of Central Florida and from there, I learned a lot about full stack software development and computer science.
-              My current focuses right now are on learning more about web development as well as other software development topics.
-              I am experienced in creating MERN stack projects as well as LAMP stack projects. 
-              I am also experienced with Git, MySQL, and Visual Studio Code, I hope to make more use of these as I progress on with my career. 
-              I can also speak and comprehend limited Mandarin Chinese. 
-              Other than programming, I enjoy watching basketball and watching TV in my free time.
-              </p>
-              <div className='aboutImgDiv'>
-                {/*<img src='program.png' alt='program' className={`aboutImg ${visibleSection === "About" ? "fadeinP" : "hidden"}`}/> */}
+            <div className={`aboutCardDiv `}>
+              <div className='fill'>
+                <div className='aboutImgDiv'>
+                  {<img src='program.png' alt='program' className={`aboutImg`}/> }
+                </div>
+                <div className='aboutContent'>
+                  <h1 className={`aboutHeader`}>About Me</h1>
+                  <p className={`aboutP`}>
+                  Hello! My name is Jason Lin and I enjoy creating software as well as learning new ideas. 
+                  I am currently a student at the University of Central Florida and from there, I learned a lot about full stack software development and computer science.
+                  My current focuses right now are on learning more about web development as well as other software development topics.
+                  I am experienced in creating MERN stack projects as well as LAMP stack projects. 
+                  I am also experienced with Git, MySQL, and Visual Studio Code, I hope to make more use of these as I progress on with my career. 
+                  I can also speak and comprehend limited Mandarin Chinese. 
+                  Other than programming, I enjoy watching basketball and watching TV in my free time.
+                  </p>
+                </div>
               </div>
+              
+              
             </div>
         </div> 
 
         <div className="section" id="Projects" ref={ projectsRef }>
             <h2 className={`projectsHeader`}>Here are some of the projects I've worked on</h2>
         </div>
-        <div className="section" id="Contact" ref={contactRef}/>
+        <div className="section" id="Contact" ref={contactRef}>
+            <h3 className={`contactHeader`}>Contact Information</h3>
+        </div>
       </div>
 
       <div className="bottom-spacer" />
