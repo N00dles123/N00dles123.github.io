@@ -6,6 +6,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import CardLeft from './Components/CardLeft';
 import CardRight from './Components/CardRight';
 import 'bootstrap/dist/css/bootstrap.css';
+import Contact from './Components/Contact';
 
 
 // functions to handle scrolling and dimensions of the screen
@@ -127,7 +128,7 @@ function App() {
         </div>
         <div className="section" id="About" ref={ aboutRef }>
             <div className={`aboutCardDiv`}>
-              <div className={`fill ${visibleSection === "About" ? "fadeinP" : "hidden"}`}>
+              <div className={`fill ${/*visibleSection === "About" ? "fadeinP" : "hidden"*/""}`}>
                 <div className='aboutImgDiv'>
                   {<img src='program.png' alt='program' className={`aboutImg`}/> }
                 </div>
@@ -140,7 +141,7 @@ function App() {
                   I am experienced in creating MERN stack projects as well as LAMP stack projects. 
                   I am also experienced with Git, MySQL, and Visual Studio Code, I hope to make more use of these as I progress on with my career. 
                   I can also speak and comprehend limited Mandarin Chinese. 
-                  Other than programming, I enjoy watching basketball and watching TV in my free time.
+                  Other than programming, I enjoy watching basketball and TV in my free time.
                   </p>
                 </div>
               </div>
@@ -169,6 +170,7 @@ function App() {
         </div>
         <div className="section" id="Contact" ref={contactRef}>
             <h3 className={`contactHeader`}>Contact Information</h3>
+            <Contact/>
         </div>
       </div>
 
