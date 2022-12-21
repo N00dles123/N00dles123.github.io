@@ -221,6 +221,7 @@
 .cardLeft{
   display: flex;
   min-width: 80%;
+  max-height: 30%;
   margin-left: 10%;
   margin-right: 10%;
   background-color: #899CBA;
@@ -237,4 +238,15 @@
 .leftpDiv{
   width: 50%;
   justify-content: center;
+}
+
+.projTitle{
+  font-family: 'Roboto Mono';
+  font-size: 1.3em;
+  color: #353A6E;
+}
+
+.projectsCardDiv{
+  margin-top: 4%;
+
 }
