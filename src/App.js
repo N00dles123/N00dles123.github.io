@@ -122,8 +122,8 @@ function App() {
             </div>   
         </div>
         <div className="section" id="About" ref={ aboutRef }>
-            <div className={`aboutCardDiv `}>
-              <div className='fill'>
+            <div className={`aboutCardDiv`}>
+              <div className={`fill ${visibleSection === "About" ? "fadeinP" : "hidden"}`}>
                 <div className='aboutImgDiv'>
                   {<img src='program.png' alt='program' className={`aboutImg`}/> }
                 </div>
