@@ -10,6 +10,7 @@ body {
 }
 html{
   overscroll-behavior: none;
+  overflow-x: hidden;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

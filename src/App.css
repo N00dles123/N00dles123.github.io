@@ -5,6 +5,7 @@
 *::-webkit-scrollbar{
   width: thin;
   color: white;
+  overflow-x: 0;
 }
 *{
   scrollbar-width: thin;
