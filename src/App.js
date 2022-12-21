@@ -3,6 +3,7 @@ import "@fontsource/roboto-slab"
 import "@fontsource/roboto-mono"
 import "@fontsource/roboto"
 import React, { useRef, useState, useEffect } from 'react';
+import CardLeft from './Components/CardLeft';
 
 // functions to handle scrolling and dimensions of the screen
 const getDimensions = ele => {
@@ -82,7 +83,7 @@ function App() {
       <div className="top-spacer" />
       <div className="content">
         <div className="sticky">
-          <navbar className="header" ref={headerRef}>
+          <div className="header" ref={headerRef}>
             <button type="button" 
             className={`header_link ${visibleSection === "About" ? "selected" : ""}`}
             onClick={() => {
@@ -110,7 +111,7 @@ function App() {
             <button type="button" className='resumeButton' onClick={onButtonClick}>
               Resume
             </button>
-          </navbar>
+          </div>
         </div>
         <div className="section" id="Home" ref={ homeRef }>
             <div className='homeBox'>   
@@ -147,6 +148,9 @@ function App() {
 
         <div className="section" id="Projects" ref={ projectsRef }>
             <h2 className={`projectsHeader`}>Here are some of the projects I've worked on</h2>
+            <div className={`projectsCardDiv`}>
+              {<CardLeft img='recipefy.gif' description='a recipe app' title="Recipefy" link="https://github.com/N00dles123/Recipefy"/>}
+            </div>
         </div>
         <div className="section" id="Contact" ref={contactRef}>
             <h3 className={`contactHeader`}>Contact Information</h3>

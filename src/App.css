@@ -1,6 +1,15 @@
 .App {
   text-align: center;
 }
+
+*::-webkit-scrollbar{
+  width: thin;
+  color: white;
+}
+*{
+  scrollbar-width: thin;
+}
+
 .header_link {
   margin-right: 4.1%;
   padding: 10px;
@@ -77,7 +86,7 @@
 }
 
 #Contact {
-  min-height: 88vh;
+  min-height: 94vh;
   text-align: center;
   display: block;
 }
@@ -201,4 +210,31 @@
 
 .aboutContent{
   border-radius: 10px;
+}
+
+.contactHeader{
+  font-family: 'Roboto Mono';
+  font-size: 1.8rem;
+  color: #ECEDED;
+}
+
+.cardLeft{
+  display: flex;
+  min-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #899CBA;
+  border-radius: 10px;
+}
+
+.cardLeftImg{
+  width: 50%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.leftpDiv{
+  width: 50%;
+  justify-content: center;
 }
