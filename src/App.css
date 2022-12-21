@@ -2,14 +2,7 @@
   text-align: center;
 }
 
-*::-webkit-scrollbar{
-  width: thin;
-  color: white;
-  overflow-x: 0;
-}
-*{
-  scrollbar-width: thin;
-}
+
 
 .header_link {
   margin-right: 4.1%;
