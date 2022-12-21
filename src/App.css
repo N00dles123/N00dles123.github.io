@@ -40,7 +40,7 @@
 .content{
   display: grid;
 }
-.header {
+.header1 {
   padding-top: 0;
   padding-bottom: 0;
   display: flex;
@@ -213,13 +213,13 @@
 }
 
 .contactHeader{
+  padding-top: 2%;
   font-family: 'Roboto Mono';
   font-size: 1.8rem;
   color: #ECEDED;
 }
-
+/*
 .cardLeft{
-  display: flex;
   min-width: 80%;
   max-height: 30%;
   margin-left: 10%;
@@ -227,20 +227,38 @@
   background-color: #899CBA;
   border-radius: 10px;
 }
-
+*/
 .cardLeftImg{
-  width: 50%;
+  margin-left: -4%;
+  padding-right: -4%;
+  width: 100%;
   height: auto;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
+.cardRightImg{
+  margin-right: -4%;
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .leftpDiv{
+  padding-top: 4%;
+  width: 50%;
+  justify-content: center;
+}
+
+.rightpDiv{
+  padding-top: 4%;
   width: 50%;
   justify-content: center;
 }
 
 .projTitle{
+  margin-top: 10px;
   font-family: 'Roboto Mono';
   font-size: 1.3em;
   color: #353A6E;
@@ -249,4 +267,34 @@
 .projectsCardDiv{
   margin-top: 4%;
 
+
+}
+
+.projectLeftp{
+  padding-top: 2%;
+  margin-left: 25%;
+  font-family: 'Roboto Slab';
+  max-width: 50%;
+}
+
+.projectRightp{
+  padding-top: 2%;
+  margin-left: 25%;
+  font-family: 'Roboto Slab';
+  max-width: 50%;
+}
+
+.row{
+  border-radius: 10px;
+  background-color: #899CBA;
+  margin-bottom: 5%
+}
+
+.container{
+  min-width: 80%;
+}
+
+
+.col-sm-6{
+  min-width: 50%;
 }

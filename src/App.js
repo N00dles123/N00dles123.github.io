@@ -4,6 +4,9 @@ import "@fontsource/roboto-mono"
 import "@fontsource/roboto"
 import React, { useRef, useState, useEffect } from 'react';
 import CardLeft from './Components/CardLeft';
+import CardRight from './Components/CardRight';
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 // functions to handle scrolling and dimensions of the screen
 const getDimensions = ele => {
@@ -83,7 +86,7 @@ function App() {
       <div className="top-spacer" />
       <div className="content">
         <div className="sticky">
-          <div className="header" ref={headerRef}>
+          <div className="header1" ref={headerRef}>
             <button type="button" 
             className={`header_link ${visibleSection === "About" ? "selected" : ""}`}
             onClick={() => {
@@ -149,7 +152,19 @@ function App() {
         <div className="section" id="Projects" ref={ projectsRef }>
             <h2 className={`projectsHeader`}>Here are some of the projects I've worked on</h2>
             <div className={`projectsCardDiv`}>
-              {<CardLeft img='recipefy.gif' description='a recipe app' title="Recipefy" link="https://github.com/N00dles123/Recipefy"/>}
+              {<CardLeft img='recipefy.gif' 
+              description='This web application is meant to share recipes and favorite recipes created by others on the platform. This was created using the MERN stack and deployed through Heroku. I served as the project manager as well as helped the API team for this project' 
+              title="Recipefy" 
+              link="https://github.com/N00dles123/Recipefy"/>}
+              {<CardRight img='game.gif' 
+              description='Implemented a multiplayer version of the popular word game Wordle along with two other people. I created the API endpoints of this project for login and registration. This project was created with the MERN stack and deployed through Heroku. I also made use of socket.io to help create rooms for two way communication between two users.' 
+              title="Muldle" 
+              link="https://github.com/N00dles123/multi-wordle"/>}
+              {<CardLeft img='ContactHub.png'
+              description='This is a web application that allows users to create and share contact information with other users. This was created using the LAMP stack and deployed through Heroku. I served as the project manager as well as helped the API team for this project'
+              title="ContactHub"
+              link="https://github.com/N00dles123/COP4331-Small-project-group8"
+              />}
             </div>
         </div>
         <div className="section" id="Contact" ref={contactRef}>
