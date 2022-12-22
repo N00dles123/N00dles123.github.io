@@ -134,11 +134,13 @@ function App() {
         {/*</div>*/}
         <div className="section" id="Home" ref={ homeRef }>
             <div className='homeBox'>   
-                  <p className='homeP'>
-                  &#128075; Hi, I’m Jason
-                  I am a software engineer and a student.
-                  Scroll down to learn more about me and my projects :)
-                  </p>
+                  <div className="homePBox">
+                    <p className='homeP'>
+                    &#128075; Hi, I’m Jason
+                    I am a software engineer and a student.
+                    Scroll down to learn more about me and my projects :)
+                    </p>
+                  </div>
             </div>   
         </div>
         <div className="section" id="About" ref={ aboutRef }>

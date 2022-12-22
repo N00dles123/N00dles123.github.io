@@ -96,19 +96,32 @@
   display: block;
 }
 
-.homeP {
-  min-height: auto;
+.homePBox{
+  width: 80%;
+  max-height: 50%;
   margin-left: 10%;
+}
+
+.homeP {
+  overflow: hidden;
+  height: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   padding-top: 7.5%;
   font-family: "Roboto Slab";
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  width: 80%;
   vertical-align: middle;
   color: #ECEDED;
 }
 
+/*
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+*/
 .aboutHeader{
   font-family: 'Roboto Mono';
   font-size: 1.8rem;
@@ -150,7 +163,7 @@
   margin-left: 17.5%;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: rgb(46, 48, 79);
   display: block;
   min-height: 10%;
