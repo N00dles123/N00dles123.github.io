@@ -85,13 +85,13 @@ function App() {
     <div className='App'>
       <div className="content">
         {/*<div className="sticky">*/}
-          <nav className="navbar navbar-expand-lg sticky-top" ref={headerRef}>
+          <nav className="navbar navbar-expand-sm sticky-top" ref={headerRef}>
             <div className="container-fluid">
               <button className="navbar-toggler navbar-toggler-left" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse justify-content-center" id="navbarNav">  
-                <ul className="navbar-nav mx-auto">
+                <ul className="navbar-nav mr-auto">
                   <li className="nav-item">
                     <button type="button" 
                     className={`header_link ${visibleSection === "About" ? "selected" : ""} nav-button`}

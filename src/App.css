@@ -2,19 +2,11 @@
   text-align: center;
 }
 
-@media screen and (max-width: 660px) {
-  .navbar-collapse {
-    flex-grow: 0;
-  }
-  .navbar{
-    justify-content: center;
-  }
-}
-  
+
 
 
 .header_link {
-  margin-right: 30px;
+  margin-right: 20px;
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
