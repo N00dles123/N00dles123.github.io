@@ -2,11 +2,19 @@
   text-align: center;
 }
 
+@media screen and (max-width: 660px) {
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  .navbar{
+    justify-content: center;
+  }
+}
+  
 
 
 .header_link {
-  margin-right: 4.1%;
-  padding: 10px;
+  margin-right: 30px;
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
@@ -17,6 +25,11 @@
   outline: none;
   border: none;
   color: #ECEDED;
+}
+
+.header_link:hover{
+  border-bottom: 3px solid #353A6E;
+  color: #353A6E;
 }
 .resumeButton{
   text-decoration: none;
@@ -29,17 +42,12 @@
   font-weight: 500;
   color: #353A6E;
   font-size: 30px;
-  margin: 10px
 }
 .content{
   display: grid;
 }
-.header1 {
-  padding-top: 0;
-  padding-bottom: 0;
-  display: flex;
-  justify-content: center;
-  min-height: 12%;
+
+.navbar{
   background-color: #899CBA;
 }
 
@@ -48,7 +56,6 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
 }
 
 .selected {
@@ -57,7 +64,7 @@
 }
 
 .section {
-  min-width: 98vw;
+  overflow: hidden;
   background-color: #353A6E;
 }
 
@@ -65,7 +72,7 @@
   margin: -1px;
   padding: 1px;
   border: none;
-  min-height: 92vh;
+  min-height: 88vh;
   text-align: center;
 }
 
@@ -100,7 +107,7 @@
 .homeP {
   min-height: auto;
   margin-left: 10%;
-  padding-top: 10%;
+  padding-top: 7.5%;
   font-family: "Roboto Slab";
   font-weight: 700;
   font-size: 40px;
@@ -109,6 +116,7 @@
   vertical-align: middle;
   color: #ECEDED;
 }
+
 .aboutHeader{
   font-family: 'Roboto Mono';
   font-size: 1.8rem;
@@ -147,15 +155,15 @@
 
 .homeBox{
   margin-top: 10%;
-  margin-left: 25%;
+  margin-left: 17.5%;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   background-color: rgb(46, 48, 79);
   display: block;
   min-height: 10%;
-  min-width: 50vw;
-  margin-right: 25%;
+  min-width: 65%;
+  margin-right: 17.5%;
   box-shadow: 0 4px 8px 0 rgba(13, 13, 13, 0.2);
   padding-bottom: 5vh;
 
@@ -291,6 +299,8 @@
 }
 
 .row{
+  margin-left: 0px;
+  margin-right: 0px;
   border-radius: 10px;
   background-color: #899CBA;
   margin-bottom: 5%

@@ -5,7 +5,7 @@ import "@fontsource/roboto"
 import React, { useRef, useState, useEffect } from 'react';
 import CardLeft from './Components/CardLeft';
 import CardRight from './Components/CardRight';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from './Components/Contact';
 
 
@@ -62,7 +62,6 @@ function App() {
       } else if (!selected && visibleSection) {
         setVisibleSection(undefined);
       }
-      console.log(visibleSection)
     };
 
     handleScroll();
@@ -84,39 +83,55 @@ function App() {
   }
   return (
     <div className='App'>
-      <div className="top-spacer" />
       <div className="content">
-        <div className="sticky">
-          <div className="header1" ref={headerRef}>
-            <button type="button" 
-            className={`header_link ${visibleSection === "About" ? "selected" : ""}`}
-            onClick={() => {
-              scrollTo(aboutRef.current);
-            }}
-            >
-              About
-            </button>
-            <button type="button" 
-            className={`header_link ${visibleSection === "Projects" ? "selected" : ""}`}
-            onClick={() => {
-              scrollTo(projectsRef.current);
-            }}
-            >
-              Projects
-            </button>
-            <button type="button" 
-            className={`header_link ${visibleSection === "Contact" ? "selected" : ""}`}
-            onClick={() => {
-              scrollTo(contactRef.current);
-            }}
-            >
-              Contact
-            </button>
-            <button type="button" className='resumeButton' onClick={onButtonClick}>
-              Resume
-            </button>
-          </div>
-        </div>
+        {/*<div className="sticky">*/}
+          <nav className="navbar navbar-expand-lg sticky-top" ref={headerRef}>
+            <div className="container-fluid">
+              <button className="navbar-toggler navbar-toggler-left" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="collapse navbar-collapse justify-content-center" id="navbarNav">  
+                <ul className="navbar-nav mx-auto">
+                  <li className="nav-item">
+                    <button type="button" 
+                    className={`header_link ${visibleSection === "About" ? "selected" : ""} nav-button`}
+                    onClick={() => {
+                      scrollTo(aboutRef.current);
+                    }}
+                    >
+                      About
+                    </button>
+                  </li>
+                  <li className="nav-item">
+                    <button type="button" 
+                    className={`header_link ${visibleSection === "Projects" ? "selected" : ""}`}
+                    onClick={() => {
+                      scrollTo(projectsRef.current);
+                    }}
+                    >
+                      Projects
+                    </button>
+                  </li>
+                  <li className="nav-item">
+                    <button type="button" 
+                    className={`header_link ${visibleSection === "Contact" ? "selected" : ""}`}
+                    onClick={() => {
+                      scrollTo(contactRef.current);
+                    }}
+                    >
+                      Contact
+                    </button>
+                  </li>
+                  <li className="nav-item">
+                    <button type="button" className='resumeButton' onClick={onButtonClick}>
+                      Resume
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        {/*</div>*/}
         <div className="section" id="Home" ref={ homeRef }>
             <div className='homeBox'>   
                   <p className='homeP'>
@@ -173,8 +188,6 @@ function App() {
             <Contact/>
         </div>
       </div>
-
-      <div className="bottom-spacer" />
     </div>
   );
 }

@@ -5,7 +5,7 @@ function CardLeft({img, title, description, link}){
     return (
         <div className="container">
             <div className="row">
-                <div class="col-sm-6">
+                <div className="col-sm-6">
                     <img src={img} alt="image/gif showing project" className="cardLeftImg"/>
                 </div>
                 <div className='col-sm-6 leftpDiv'>

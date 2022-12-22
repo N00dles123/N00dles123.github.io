@@ -10,7 +10,7 @@ function CardRight({img, title, description, link}){
                         <a className="projTitle" href={link}>{title}</a>
                         <p className='projectRightp'>{description}</p>
                     </div>
-                    <div class="col-sm-6">
+                    <div className="col-sm-6">
                         <img src={img} alt="image/gif showing project" className="cardRightImg"/>
                     </div>
                 </div>
