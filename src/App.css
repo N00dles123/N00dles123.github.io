@@ -97,9 +97,10 @@
 }
 
 .homePBox{
-  width: 80%;
+  min-width: 80%;
   max-height: 50%;
   margin-left: 10%;
+  margin-right: 10%;
 }
 
 .homeP {
@@ -107,21 +108,48 @@
   height: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 7.5%;
   font-family: "Roboto Slab";
   font-weight: 700;
-  font-size: 40px;
+  font-size: 34px;
   text-align: center;
   vertical-align: middle;
   color: #ECEDED;
 }
 
-/*
+.nameContainer{
+  font-size: 25px;
+  justify-content: center;
+  width: 100%;
+  display: grid;
+  padding-right: 2%;
+}
+
+.name {
+  white-space: nowrap;
+  width: 0;
+  border-right: .15em solid #ECEDED;
+  margin-top: 7.5%;
+  overflow: hidden;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+  color: #ECEDED;
+  animation: typing 1.5s steps(30, end) forwards, blinking 0.875s infinite;
+}
+
+@keyframes blinking {
+  0% {border-color: transparent}
+  50% {border-color: #ECEDED}
+  100% {border-color: transparent}
+}
+
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 100%; }
 }
-*/
+
 .aboutHeader{
   font-family: 'Roboto Mono';
   font-size: 1.8rem;

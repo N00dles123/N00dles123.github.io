@@ -135,8 +135,12 @@ function App() {
         <div className="section" id="Home" ref={ homeRef }>
             <div className='homeBox'>   
                   <div className="homePBox">
+                    <div className='nameContainer'>
+                      <p className='name'>
+                      &#128075; Hi, I’m Jason
+                      </p>
+                    </div>
                     <p className='homeP'>
-                    &#128075; Hi, I’m Jason
                     I am a software engineer and a student.
                     Scroll down to learn more about me and my projects :)
                     </p>
