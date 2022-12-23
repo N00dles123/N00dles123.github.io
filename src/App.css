@@ -382,6 +382,7 @@
 }
 
 .copyrightText{
+  font-family: 'Roboto Slab';
   padding-top: -2vh;
   background-color: #353A6E;
   color: #ECEDED;
