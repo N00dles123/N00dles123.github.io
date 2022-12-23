@@ -371,12 +371,15 @@
   background-color: #99965A;
   border-radius: 10px;
   margin-bottom: 10%;
+  overflow: hidden;
 }
 
 .contactText{
   font-family: 'Roboto Slab';
   font-size: 1.1em;
   padding-bottom: 9.5%;
+  padding-left: 3px;
+  padding-right: 3px;
   display: inline-block;
   color: rgb(46, 48, 79);
 }
