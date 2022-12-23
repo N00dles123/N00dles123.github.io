@@ -253,7 +253,7 @@
 }
 
 .contactHeader{
-  padding-top: 2%;
+  padding-top: 4%;
   padding-bottom: 2%;
   font-family: 'Roboto Mono';
   font-size: 1.8rem;
@@ -379,4 +379,11 @@
   padding-bottom: 9.5%;
   display: inline-block;
   color: rgb(46, 48, 79);
+}
+
+.copyrightText{
+  padding-top: -2vh;
+  background-color: #353A6E;
+  color: #ECEDED;
+  padding-bottom: 1%;
 }

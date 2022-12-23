@@ -170,7 +170,6 @@ function App() {
               
             </div>
         </div> 
-
         <div className="section" id="Projects" ref={ projectsRef }>
             <h2 className={`projectsHeader`}>Here are some of the projects I've worked on</h2>
             <div className={`projectsCardDiv`}>
@@ -191,8 +190,9 @@ function App() {
         </div>
         <div className="section" id="Contact" ref={contactRef}>
             <h3 className={`contactHeader`}>Contact Information</h3>
-            <Contact/>
+            <Contact/> 
         </div>
+        <div className='copyrightText'>&copy; 2022 by Jason Lin</div>
       </div>
     </div>
   );
