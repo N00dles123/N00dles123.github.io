@@ -97,10 +97,11 @@
 }
 
 .homePBox{
-  min-width: 80%;
+  margin-top: 20%;
+  min-width: 90%;
   max-height: 50%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .homeP {
@@ -261,6 +262,7 @@
 
 .contactHeader{
   padding-top: 2%;
+  padding-bottom: 2%;
   font-family: 'Roboto Mono';
   font-size: 1.8rem;
   color: #ECEDED;
@@ -356,4 +358,15 @@
   margin-right: 20%;
   background-color: rgb(46, 48, 79);
   box-shadow: 0 4px 8px 0 rgba(13, 13, 13, 0.2);
+}
+
+.container-contact{
+  background-color: rgb(46, 48, 79);
+  justify-content: center;
+  align-items: center;
+}
+
+.contactLogo{
+  height: 40px;
+  width: auto;
 }
