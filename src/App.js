@@ -182,7 +182,7 @@ function App() {
               title="Muldle" 
               link="https://github.com/N00dles123/multi-wordle"/>}
               {<CardLeft img='ContactHub.png'
-              description='This is a web application that allows users to create and share contact information with other users. This was created using the LAMP stack and deployed through Heroku. I served as the project manager as well as helped the API team for this project'
+              description="This application manages a user's contacts and can store or delete contacts through CRUD operations in the database. This was created using the LAMP stack and deployed through Digital Ocean. I served as the project manager as well as helped the API team for this project"
               title="ContactHub"
               link="https://github.com/N00dles123/COP4331-Small-project-group8"
               />}
