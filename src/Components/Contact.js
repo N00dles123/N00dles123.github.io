@@ -11,7 +11,7 @@ function Contact(){
                             <h1 className="contactTitle">Email</h1>
                             <div className="contactText">
                                 <a className="email" href="mailto:jasonlinfl@hotmail.com" target='_blank' rel="noreferrer">
-                                    jasonlinfl@hotmail.com
+                                    jasonlin@knights.ucf.edu
                                 </a>
                             </div>
                         </div>
