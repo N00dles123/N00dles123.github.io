@@ -7,7 +7,7 @@ import CardLeft from './Components/CardLeft';
 import CardRight from './Components/CardRight';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from './Components/Contact';
-
+import data from './Components/data.json';
 
 // functions to handle scrolling and dimensions of the screen
 const getDimensions = ele => {
@@ -137,12 +137,11 @@ function App() {
                   <div className="homePBox">
                     <div className='nameContainer'>
                       <p className='name'>
-                      &#128075; Hi, I’m Jason
+                      &#128075; Hi, I’m {data.name}
                       </p>
                     </div>
                     <p className='homeP'>
-                    I am a software engineer and a student.
-                    Scroll down to learn more about me and my projects :)
+                    {data.home}
                     </p>
                   </div>
             </div>   
@@ -156,13 +155,7 @@ function App() {
                 <div className='aboutContent'>
                   <h1 className={`aboutHeader`}>About Me</h1>
                   <p className={`aboutP`}>
-                  Hello! My name is Jason Lin and I enjoy creating software as well as learning new ideas. 
-                  I am currently a student at the University of Central Florida and from there, I learned a lot about full stack software development and computer science.
-                  My current focuses right now are on learning more about web development as well as other software development topics.
-                  I am experienced in creating MERN stack projects as well as LAMP stack projects. 
-                  I am also experienced with Git, MySQL, and Visual Studio Code, I hope to make more use of these as I progress on with my career. 
-                  I can also speak and comprehend limited Mandarin Chinese. 
-                  Other than programming, I enjoy watching basketball and TV in my free time.
+                    {data.about}
                   </p>
                 </div>
               </div>
@@ -173,19 +166,10 @@ function App() {
         <div className="section" id="Projects" ref={ projectsRef }>
             <h2 className={`projectsHeader`}>Here are some of the projects I've worked on</h2>
             <div className={`projectsCardDiv`}>
-              {<CardLeft img='recipefy.gif' 
-              description='This web application is meant to share recipes and favorite recipes created by others on the platform. This was created using the MERN stack and deployed through Heroku. I served as the project manager as well as helped the API team for this project' 
-              title="Recipefy" 
-              link="https://github.com/N00dles123/Recipefy"/>}
-              {<CardRight img='game.gif' 
-              description='Implemented a multiplayer version of the popular word game Wordle along with two other people. I created the API endpoints of this project for login and registration. This project was created with the MERN stack and deployed through Heroku. I also made use of socket.io to help create rooms for two way communication between two users.' 
-              title="Muldle" 
-              link="https://github.com/N00dles123/multi-wordle"/>}
-              {<CardLeft img='ContactHub.png'
-              description="This application manages a user's contacts and can store or delete contacts through CRUD operations in the database. This was created using the LAMP stack and deployed through Digital Ocean. I served as the project manager as well as helped the API team for this project"
-              title="ContactHub"
-              link="https://github.com/N00dles123/COP4331-Small-project-group8"
-              />}
+              {data.projects.map((project, index) => {
+                return (index % 2 === 0) ? <CardLeft img={project.img} description={project.description} title={project.name} link={project.link}/> : <CardRight img={project.img} description={project.description} title={project.name} link={project.link}/>
+              })
+              }
             </div>
         </div>
         <div className="section" id="Contact" ref={contactRef}>

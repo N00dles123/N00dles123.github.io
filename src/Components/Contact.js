@@ -1,5 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
+import data from './data.json';
 
 function Contact(){
     return (
@@ -10,8 +11,8 @@ function Contact(){
                         <div className='infoContainer'>
                             <h1 className="contactTitle">Email</h1>
                             <div className="contactText">
-                                <a className="email" href="mailto:jasonlinfl@hotmail.com" target='_blank' rel="noreferrer">
-                                    jasonlin@knights.ucf.edu
+                                <a className="email" href={`mailto:${data.email}`} target='_blank' rel="noreferrer">
+                                    {data.email}
                                 </a>
                             </div>
                         </div>
@@ -20,14 +21,14 @@ function Contact(){
                         <div className='infoContainer'>
                             <h1 className="contactTitle">Phone</h1>
                                 <div className="contactText">
-                                (321)-236-0756
+                                {data.phone}
                                 </div>
                         </div>
                     </div>
                     <div className="col-sm">
                         <div className='infoContainer'>
                             <h1 className="contactTitle">LinkedIn</h1>
-                            <a href="https://www.linkedin.com/in/jason-lin5/" target='_blank' rel="noreferrer">
+                            <a href={`${data.linkedin}`} target='_blank' rel="noreferrer">
                                 <img src="LI-In-Bug.png" alt="Linkedin Logo" className="contactLogo"/>
                             </a>
                         </div>
@@ -35,7 +36,7 @@ function Contact(){
                     <div className="col-sm">
                         <div className='infoContainer'>
                             <h1 className="contactTitle">GitHub</h1>
-                            <a href="https://github.com/N00dles123" target='_blank' rel="noreferrer">
+                            <a href={`${data.github}`} target='_blank' rel="noreferrer">
                                 <img src="github-mark.png" alt="GitHub Logo" className='contactLogo'/>
                             </a>
                         </div>

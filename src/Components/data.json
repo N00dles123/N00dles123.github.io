@@ -1,0 +1,35 @@
+{
+    "name": "Jason",
+    "home": "I am a software engineer and a student. Scroll down to learn more about me and my projects :)",
+    "about": "Hello! My name is Jason Lin and I enjoy creating software as well as learning new ideas. I am currently a student at the University of Central Florida and from there, I learned a lot about full stack software development and computer science. My current focuses right now are on learning more about web development as well as other software development topics. I am experienced in creating MERN stack projects as well as LAMP stack projects. I am also experienced with Git, MySQL, and Visual Studio Code, I hope to make more use of these as I progress on with my career. I can also speak and comprehend limited Mandarin Chinese. Other than programming, I enjoy watching basketball and TV in my free time.",
+    "projects": [
+        {
+            "name": "Recipefy",
+            "description": "This web application is meant to share recipes and favorite recipes created by others on the platform. This was created using the MERN stack and deployed through Heroku. I served as the project manager as well as helped the API team for this project",
+            "img": "recipefy.gif",
+            "link": "https://github.com/N00dles123/Recipefy"
+        },
+        {
+            "name": "Multi-threaded Merge Sort Paper",
+            "description": "This paper was written in a course focused on parallel and distributed processing. This paper focuses on the runtime of a single threaded merge sort versus a multithreaded merge sort in application to certain greedy algorithms. To test this, we wrote a program in Java that would run the greedy algorithms with a single threaded merge sort and a multithreaded merge sort.",
+            "img": "multithreadpaper.png",
+            "link": "https://www.overleaf.com/read/scqvnqcspknz"
+        },
+        {
+            "name": "Muldle",
+            "description": "Implemented a multiplayer version of the popular word game Wordle along with two other people. I created the API endpoints of this project for login and registration. This project was created with the MERN stack and deployed through Heroku. I also made use of socket.io to help create rooms for two way communication between two users.",
+            "img": "game.gif",
+            "link": "https://github.com/N00dles123/multi-wordle" 
+        },
+        {
+            "name": "ContactHub",
+            "description": "This application manages a user's contacts and can store or delete contacts through CRUD operations in the database. This was created using the LAMP stack and deployed through Digital Ocean. I served as the project manager as well as helped the API team for this project",
+            "img": "ContactHub.png",
+            "link": "https://github.com/N00dles123/COP4331-Small-project-group8"
+        }
+    ],
+    "email": "jasonlin@knights.ucf.edu",
+    "phone": "(321)-236-0756",
+    "linkedin": "https://www.linkedin.com/in/jason-lin5/",
+    "github": "https://github.com/N00dles123"
+}
