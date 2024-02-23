@@ -1,6 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 
+// try to get this to be capitalized
 function CardLeft({img, title, description, link}){
     return (
         <div className="container">
